@@ -23,22 +23,16 @@
   </div>
 </template>
 
-<style lang="scss">
-.triangle-separator {
-  &__svg {
-    width: 100%;
-  }
-}
+<style>
 .triangle-separator__wrapper {
   width: 100%;
   position: absolute;
 }
 .triangle-separator__svg {
   width: 100%;
-
-  polygon {
-    fill: "black";
-  }
+}
+.triangle-separator__svg polygon {
+  fill: "black";
 }
 .triangle-separator__container {
   position: relative;
