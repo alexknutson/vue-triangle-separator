@@ -76,6 +76,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    shouldApplyContainerHeight: {
+      type: Boolean,
+      default: true,
+    },
   },
   data: function () {
     return {
@@ -120,6 +124,11 @@ export default {
       }
       return "";
     },
+    setContainerStyles: function () {
+      return {
+        height: this.shouldApplyContainerHeight ? this.setHeight() : "",
+      };
+    },
   },
   methods: {
     getIdealWidth: function () {
@@ -127,11 +136,6 @@ export default {
     },
     setHeight: function () {
       return `${this.size}px`;
-    },
-    setContainerStyles: function () {
-      return {
-        height: this.setHeight(),
-      };
     },
   },
 };
