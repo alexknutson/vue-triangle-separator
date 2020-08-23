@@ -1,15 +1,30 @@
 {
   "name": "vue-triangle-separator",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name vue-triangle-separator ./src/components/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
+  },
+  "author": {
+    "name": "Alex Knutson",
+    "email": "alexknutson@gmail.com",
+    "url": "https://github.com/alexknutson"
+  },
+  "keywords": [
+    "vuejs",
+    "separator",
+    "triangle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexknutson/vue-triangle-separator.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -20,6 +35,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "main": "./dist/vue-triangle-separator.common.js",
+  "license": "MIT",
   "eslintConfig": {
     "root": true,
     "env": {
