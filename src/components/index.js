@@ -1,4 +1,4 @@
-import VueTriangleSeparator from './VueTriangleSeparator.vue';
+import TriangleSeparator from './TriangleSeparator.vue';
 export default {
-  VueTriangleSeparator,
+  TriangleSeparator,
 };

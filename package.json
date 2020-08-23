@@ -55,5 +55,9 @@
     "> 1%",
     "last 2 versions",
     "not dead"
+  ],
+  "files": [
+    "dist/vue-triangle-separator.common.js",
+    "dist/vue-triangle-separator.umd.js"
   ]
 }
