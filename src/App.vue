@@ -11,6 +11,14 @@
     <VueTriangleSeparator rotate></VueTriangleSeparator>
     <h2>Swap + Rotate Enabled</h2>
     <VueTriangleSeparator swap rotate></VueTriangleSeparator>
+    <h2>With Gradient</h2>
+    <VueTriangleSeparator
+      swap
+      rotate
+      should-apply-gradient
+      gradient-color-one="red"
+      gradient-color-two="blue"
+    ></VueTriangleSeparator>
   </div>
 </template>
 

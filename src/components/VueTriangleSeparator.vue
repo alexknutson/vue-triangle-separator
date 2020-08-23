@@ -12,6 +12,12 @@
         :height="this.setHeight()"
       >
         <polygon :style="setFillColor" :points="getIdealTrianglePoints" />
+        <defs>
+          <linearGradient :id="`lgradient-${this._uid}`">
+            <stop offset="0" :stop-color="this.gradientColorOne" />
+            <stop offset="1" :stop-color="this.gradientColorTwo" />
+          </linearGradient>
+        </defs>
       </svg>
     </div>
   </div>
@@ -52,17 +58,9 @@
 export default {
   name: "TriangleSeparator",
   props: {
-    fillColor: {
-      type: String,
-      default: "rgb(38 60 89)",
-    },
     size: {
       type: Number,
       default: 120,
-    },
-    zIndexOverride: {
-      type: Number,
-      default: 1,
     },
     swap: {
       type: Boolean,
@@ -76,9 +74,29 @@ export default {
       type: Boolean,
       default: false,
     },
+    fillColor: {
+      type: String,
+      default: "rgb(38 60 89)",
+    },
+    gradientColorOne: {
+      type: String,
+      default: "red",
+    },
+    gradientColorTwo: {
+      type: String,
+      default: "blue",
+    },
+    zIndexOverride: {
+      type: Number,
+      default: 1,
+    },
     shouldApplyContainerHeight: {
       type: Boolean,
       default: true,
+    },
+    shouldApplyGradient: {
+      type: Boolean,
+      default: false,
     },
   },
   data: function () {
@@ -87,7 +105,6 @@ export default {
       rotateControl: this.rotate,
     };
   },
-  mounted: function () {},
   computed: {
     getIdealTrianglePoints: function () {
       let firstVector = `0,0`;
@@ -111,7 +128,9 @@ export default {
     },
     setFillColor: function () {
       return {
-        fill: this.fillColor,
+        fill: this.shouldApplyGradient
+          ? `url(#lgradient-${this._uid})` // The gradient defined in the svg
+          : this.fillColor,
       };
     },
     setRotationClass: function () {
