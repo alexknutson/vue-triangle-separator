@@ -9,23 +9,27 @@
       </a>
     </div>
     <div class="examples">
-      <h2>
+      <h2 id="swap-disabled">
         <i class="fa fa-arrow-down" aria-hidden="true"></i> Swap Disable - (Default)
       </h2>
       <TriangleSeparator></TriangleSeparator>
-      <h2>
+      <h2 id="swap-enabled">
         <i class="fa fa-arrow-down" aria-hidden="true"></i> Swap Enabled
       </h2>
       <TriangleSeparator swap></TriangleSeparator>
-      <h2>
+      <h2 id="rotate-enabled">
         <i class="fa fa-arrow-down" aria-hidden="true"></i> Rotate Enabled
       </h2>
       <TriangleSeparator rotate></TriangleSeparator>
-      <h2>
+      <h2 id="rotate-and-swap-enabled">
         <i class="fa fa-arrow-down" aria-hidden="true"></i> Swap + Rotate Enabled
       </h2>
       <TriangleSeparator swap rotate></TriangleSeparator>
-      <h2>
+      <h2 id="fill-color">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i> Custom Fill Color
+      </h2>
+      <TriangleSeparator fill-color="#420999"></TriangleSeparator>
+      <h2 id="swap-rotate-and-gradient">
         <i class="fa fa-arrow-down" aria-hidden="true"></i> With Gradient
       </h2>
       <TriangleSeparator
@@ -35,8 +39,12 @@
         gradient-color-one="red"
         gradient-color-two="blue"
       ></TriangleSeparator>
-      <h2>
-        <i class="fa fa-arrow-down" aria-hidden="true"></i> Ignoring Height
+      <h2 id="size">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i> Size
+      </h2>
+      <TriangleSeparator swap :size="250"></TriangleSeparator>
+      <h2 id="disable-height">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i> Disable Height
       </h2>
       <p>
         By default, the triangle separator will take up space in the DOM.
@@ -46,7 +54,7 @@
       <TriangleSeparator disable-height></TriangleSeparator>
       <div class="example-content-box"></div>
       <TriangleSeparator pull-up swap rotate disable-height></TriangleSeparator>
-      <h2>
+      <h2 id="pull-up-enabled">
         <i class="fa fa-arrow-up" aria-hidden="true"></i> Pull-Up Enabled
       </h2>
       <p>
