@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name vue-triangle-separator ./src/components/index.js"
+    "build-bundle": "vue-cli-service build --target lib --name vue-triangle-separator ./src/components/index.js",
+    "install": "npm run build-bundle"
   },
   "dependencies": {
     "core-js": "^3.6.5",
