@@ -20,7 +20,8 @@
   "keywords": [
     "vuejs",
     "separator",
-    "triangle"
+    "triangle",
+    "svg"
   ],
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
   },
   "main": "./dist/vue-triangle-separator.common.js",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "eslintConfig": {
     "root": true,
     "env": {
