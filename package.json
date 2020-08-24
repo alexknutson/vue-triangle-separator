@@ -1,6 +1,6 @@
 {
   "name": "vue-triangle-separator",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -38,7 +38,9 @@
   },
   "main": "./dist/vue-triangle-separator.common.js",
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
