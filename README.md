@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/npm/v/vue-triangle-separator)
 
-Quickly add SVG triangle separators to your page.
+Quickly add full-bleed SVG triangle separators to your page.
 
 ## Demo & Examples
 
@@ -14,13 +14,13 @@ Live demo - https://alexknutson.github.io/vue-triangle-separator/
  ```
 
 ## Usage
-Items should be passed as child elements of the components
+Import & Register the component
 ```javascript
 import { TriangleSeparator } from "vue-triangle-separator";
 
 export default {
     components: {
-        TriangleSeparator // Register your component
+        TriangleSeparator
     }
 }
 ```
@@ -47,7 +47,7 @@ In your template, try one of the following...
 ```
 
 ### Props
-| Name | Description | Example |
+| Name | Details | Example |
 | ---- | --- | ---- |
 | size | default: `120` | [Example](https://alexknutson.github.io/vue-triangle-separator#size) |
 | swap | default: `false` | [Example](https://alexknutson.github.io/vue-triangle-separator#swap-disabled) |
