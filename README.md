@@ -1,6 +1,5 @@
 # vue-triangle-separator
-
-![npm](https://img.shields.io/npm/v/vue-triangle-separator)
+![npm](https://img.shields.io/npm/v/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/min/vue-triangle-separator)
 
 Quickly add full-bleed SVG triangle separators to your page.
 
