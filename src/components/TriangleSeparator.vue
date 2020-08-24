@@ -11,7 +11,7 @@
         class="triangle-separator__svg"
         :height="this.setHeight()"
       >
-        <polygon :style="setFillColor" :points="getIdealTrianglePoints" />
+        <polygon :style="setFill" :points="getIdealTrianglePoints" />
         <defs>
           <linearGradient :id="`lgradient-${this._uid}`">
             <stop offset="0" :stop-color="this.gradientColorOne" />
@@ -120,7 +120,7 @@ export default {
         top: this.pullUp ? `-${this.size}px` : `0`,
       };
     },
-    setFillColor: function () {
+    setFill: function () {
       return {
         fill: this.shouldApplyGradient
           ? `url(#lgradient-${this._uid})` // The gradient defined in the svg
