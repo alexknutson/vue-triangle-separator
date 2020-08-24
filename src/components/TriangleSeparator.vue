@@ -84,9 +84,9 @@ export default {
       type: Number,
       default: 1,
     },
-    shouldApplyContainerHeight: {
+    disableHeight: {
       type: Boolean,
-      default: true,
+      default: false,
     },
     shouldApplyGradient: {
       type: Boolean,
@@ -139,7 +139,7 @@ export default {
     },
     setContainerStyles: function () {
       return {
-        height: this.shouldApplyContainerHeight ? this.setHeight() : "",
+        height: this.disableHeight ? "" : this.setHeight(),
       };
     },
   },

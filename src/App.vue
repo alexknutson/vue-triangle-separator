@@ -41,11 +41,11 @@
       <p>
         By default, the triangle separator will take up space in the DOM.
         <br />Adding the
-        <code>:should-apply-container-height="false"</code> will remove the container height, so the triangle can overlap the content below it in the DOM.
+        <code>disable-height</code> prop will remove the container height, so the triangle can overlap the content below it in the DOM.
       </p>
-      <TriangleSeparator :should-apply-container-height="false"></TriangleSeparator>
+      <TriangleSeparator disable-height></TriangleSeparator>
       <div class="example-content-box"></div>
-      <TriangleSeparator pull-up swap rotate :should-apply-container-height="false"></TriangleSeparator>
+      <TriangleSeparator pull-up swap rotate disable-height></TriangleSeparator>
       <h2>
         <i class="fa fa-arrow-up" aria-hidden="true"></i> Pull-Up Enabled
       </h2>
