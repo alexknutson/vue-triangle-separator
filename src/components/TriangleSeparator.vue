@@ -7,8 +7,8 @@
       ref="wrapper"
     >
       <svg
-        :width="this.getIdealWidth()"
         class="triangle-separator__svg"
+        :width="this.getIdealWidth()"
         :height="this.setHeight()"
       >
         <polygon :style="setFill" :points="getIdealTrianglePoints" />
