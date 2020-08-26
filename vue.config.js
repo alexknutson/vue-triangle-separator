@@ -1,6 +1,11 @@
 module.exports = {
   css: {
     extract: false,
+    loaderOptions: {
+      sass: {
+        additionalData: `@import "@/assets/demoStyles/_main.scss";`,
+      },
+    },
   },
   configureWebpack: {
     output: {

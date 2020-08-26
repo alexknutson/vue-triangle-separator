@@ -4,7 +4,7 @@ Quickly add full-bleed SVG-powered triangle separators to your page.
 ## Demo & Examples
 Live demo - https://alexknutson.github.io/vue-triangle-separator/
 
-![npm](https://img.shields.io/npm/v/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/min/vue-triangle-separator)
+![npm](https://img.shields.io/npm/v/vue-triangle-separator) ![npm](https://img.shields.io/npm/dt/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/vue-triangle-separator) ![npm bundle size](https://img.shields.io/bundlephobia/min/vue-triangle-separator)
 
 ## Install
 ```bash
