@@ -219,6 +219,11 @@
         <i class="fa fa-github" aria-hidden="true"></i>
         <span>GITHUB</span>
       </a>
+      <span class="current-version">
+        Current Version
+        <br />
+        <strong>{{version}}</strong>
+      </span>
     </footer>
   </div>
 </template>
@@ -235,6 +240,7 @@ export default {
       layoutOneSize: 100,
       layoutTwoSize: 125,
       layoutThreeSize: 225,
+      version: require("../package.json").version,
     };
   },
   computed: {},
@@ -321,6 +327,13 @@ p {
     position: absolute;
     right: 150px;
     top: 66px;
+  }
+  .current-version {
+    position: absolute;
+    left: 150px;
+    top: 66px;
+    text-align: left;
+    color: black;
   }
 }
 a {
