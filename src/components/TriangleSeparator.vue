@@ -13,7 +13,7 @@
       >
         <polygon :style="setFill" :points="getIdealTrianglePoints" />
         <defs>
-          <linearGradient :id="`lgradient-${this._uid}`">
+          <linearGradient :id="`lgradient-${this.id}`">
             <stop offset="0" :stop-color="this.gradientColorOne" />
             <stop offset="1" :stop-color="this.gradientColorTwo" />
           </linearGradient>
@@ -97,7 +97,11 @@ export default {
     return {
       swapControl: this.swap,
       rotateControl: this.rotate,
+      id: null,
     };
+  },
+  mounted() {
+    this.id = this._uid
   },
   computed: {
     getIdealTrianglePoints: function () {
@@ -123,7 +127,7 @@ export default {
     setFill: function () {
       return {
         fill: this.shouldApplyGradient
-          ? `url(#lgradient-${this._uid})` // The gradient defined in the svg
+          ? `url(#lgradient-${this.id})` // The gradient defined in the svg
           : this.fillColor,
       };
     },
