@@ -49,6 +49,7 @@
 </style>
 
 <script>
+import { v4 as uuidv4 } from 'uuid';
 export default {
   name: "TriangleSeparator",
   props: {
@@ -101,7 +102,7 @@ export default {
     };
   },
   mounted() {
-    this.id = this._uid
+    this.id = uuidv4();
   },
   computed: {
     getIdealTrianglePoints: function () {
